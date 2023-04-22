@@ -125,12 +125,12 @@ h1{
     background-color: #347437;
 }
 .score{
-    position: absolute;
+    position: relative;
     color: black;
     width: 10%;
     height: 15%;
-    bottom: 70px;
-    right: 50px;
+    top: 74%;
+    left: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
