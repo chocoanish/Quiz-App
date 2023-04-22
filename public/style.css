@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 800px;
+}
+.Answer{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.options{
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+.do-next{
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    visibility: visible;
+}
+.choice{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    margin: 10px;
+}
+
+/* /////////////////////////////// Individual Tags ///////////////////// */
+li{
+    font-size: 30px;
+    list-style: decimal;
+    list-style-position: inside;
+}
+h1{
+    display: flex;
+    width: 100;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ////////////////////////////// Re-usable Items /////////////////////// */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: 2px solid green;
+    border-radius: 10px;
+    color: white;
+    width: 49%;
+    height: 46%;
+    margin: 6px;
+    display: inline-block;
+    font-size: 40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* //////////////////////// Don't & Next Buttons ////////////////////// */
+.action-btn{
+    color: white;
+    width: 720px;
+    height: 100%;
+    display: inline-flex;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.dont{
+    border-right: 1px solid black;
+    background-color: #bc0d0d; /* Red */
+}
+.dont:hover{
+    background-color: #8c0e0e;
+}
+.next{
+    background-color: #4CAF50; /* Green */
+    border-left: 1px solid black;
+}
+.next:hover{
+    background-color: #347437;
+}
+
+/* ///////////////////////// Check & Score Buttons ////////////////////// */
+.check{
+    position: absolute;
+    background-color: #4CAF50; /* Green */
+    border: 2px solid green;
+    border-radius: 10px;
+    color: white;
+    width: 25%;
+    height: 15%;
+    bottom: 0;
+    right: 0;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.check:hover{
+    background-color: #347437;
+}
+.score{
+    position: absolute;
+    color: black;
+    width: 10%;
+    height: 15%;
+    bottom: 70px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+/* //////////////////////////// Classes After JS ///////////////////// */
+.btn{
+    position: absolute;
+    background-color: #4CAF50; /* Green */
+    border: 2px solid green;
+    border-radius: 10px;
+    color: white;
+    width: 711px;
+    height: 97%;
+    margin: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    visibility: hidden;
+}
+.btn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.correct{
+    color: #4CAF50;
+}
+.incorrect{
+    right: 0;
+    color: #bc0d0d;
+}
+.opt{
+    visibility: visible;
+}
