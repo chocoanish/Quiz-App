@@ -48,7 +48,7 @@ check.addEventListener("click",()=>{
             element.style.visibility = 'visible'
         });
         btn.forEach(element => {
-            element.style.visibility = "hidden"; 
+            element.style.display = "none"; 
         });
         check.innerHTML = "Check"
     }
@@ -58,7 +58,7 @@ check.addEventListener("click",()=>{
             element.style.visibility = 'hidden'
         });
         btn.forEach(element => {
-            element.style.visibility = "visible"
+            element.style.display = "inline-flex"
         });
         check.innerHTML = "Cancel"
         
